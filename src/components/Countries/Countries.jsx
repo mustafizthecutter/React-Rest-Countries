@@ -13,7 +13,6 @@ const Countries = () => {
             .then(data => setCountries(data))
     }, []);
     const handleVisitedCountry = country => {
-        console.log(country)
         const newVisitedCountry = [...visitedCountries, country];
         setVisitedCountries(newVisitedCountry);
     }
